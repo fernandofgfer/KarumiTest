@@ -16,7 +16,7 @@ jobs:
         - name: Install Dependencies
           run: pod install --repo-update
         - name: Run tests
-          run: xcodebuild -workspace KarumiTest.workspace
+          run: xcodebuild -workspace KarumiTest.xcworkspace
             -scheme KarumiTestTests
             -destination platform=iOS\ Simulator,OS=13.5,name=iPhone\ 11
             test | xcpretty
