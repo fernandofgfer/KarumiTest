@@ -10,9 +10,10 @@ jobs:
     runs-on: macos-latest
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Run tests
-      run: xcodebuild -project KarumiTest.xcodeproj \
+        - name: checkout
+          uses: actions/checkout@v2
+        - name: Run tests
+          run: xcodebuild -project KarumiTest.xcodeproj \
             -scheme KarumiTest
             -destination platform=iOS\ Simulator,OS=13.3,name=iPhone\ 11 \
             clean test | xcpretty
