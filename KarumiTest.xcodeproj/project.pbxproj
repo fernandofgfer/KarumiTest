@@ -14,6 +14,8 @@
 		07BB380B24B4BE9900D1C5E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07BB380A24B4BE9900D1C5E0 /* Assets.xcassets */; };
 		07BB380E24B4BE9900D1C5E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07BB380C24B4BE9900D1C5E0 /* LaunchScreen.storyboard */; };
 		07BB381924B4BE9900D1C5E0 /* KarumiTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BB381824B4BE9900D1C5E0 /* KarumiTestTests.swift */; };
+		1B888FECA6AD260014435A4A /* Pods_KarumiTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4894851BF4F20FFDDCA55754 /* Pods_KarumiTestTests.framework */; };
+		51F926DA88E12995EB51FA1B /* Pods_KarumiTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 654544B50721BAC193F00D77 /* Pods_KarumiTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,12 @@
 		07BB381424B4BE9900D1C5E0 /* KarumiTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KarumiTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07BB381824B4BE9900D1C5E0 /* KarumiTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KarumiTestTests.swift; sourceTree = "<group>"; };
 		07BB381A24B4BE9900D1C5E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4894851BF4F20FFDDCA55754 /* Pods_KarumiTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KarumiTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		654544B50721BAC193F00D77 /* Pods_KarumiTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KarumiTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7291275760E7B64C1B1EA827 /* Pods-KarumiTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KarumiTestTests.release.xcconfig"; path = "Target Support Files/Pods-KarumiTestTests/Pods-KarumiTestTests.release.xcconfig"; sourceTree = "<group>"; };
+		7B768C4120D1A07A18BA36E6 /* Pods-KarumiTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KarumiTest.debug.xcconfig"; path = "Target Support Files/Pods-KarumiTest/Pods-KarumiTest.debug.xcconfig"; sourceTree = "<group>"; };
+		870E65B2E7B21A0AC932817C /* Pods-KarumiTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KarumiTest.release.xcconfig"; path = "Target Support Files/Pods-KarumiTest/Pods-KarumiTest.release.xcconfig"; sourceTree = "<group>"; };
+		BF8B603DD44BF568E33EAB75 /* Pods-KarumiTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KarumiTestTests.debug.xcconfig"; path = "Target Support Files/Pods-KarumiTestTests/Pods-KarumiTestTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51F926DA88E12995EB51FA1B /* Pods_KarumiTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B888FECA6AD260014435A4A /* Pods_KarumiTestTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +74,8 @@
 				07BB380024B4BE9200D1C5E0 /* KarumiTest */,
 				07BB381724B4BE9900D1C5E0 /* KarumiTestTests */,
 				07BB37FF24B4BE9200D1C5E0 /* Products */,
+				265574C4D975BF74E3B16202 /* Pods */,
+				B057969BCB4DA26511801DA9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +111,27 @@
 			path = KarumiTestTests;
 			sourceTree = "<group>";
 		};
+		265574C4D975BF74E3B16202 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7B768C4120D1A07A18BA36E6 /* Pods-KarumiTest.debug.xcconfig */,
+				870E65B2E7B21A0AC932817C /* Pods-KarumiTest.release.xcconfig */,
+				BF8B603DD44BF568E33EAB75 /* Pods-KarumiTestTests.debug.xcconfig */,
+				7291275760E7B64C1B1EA827 /* Pods-KarumiTestTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B057969BCB4DA26511801DA9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				654544B50721BAC193F00D77 /* Pods_KarumiTest.framework */,
+				4894851BF4F20FFDDCA55754 /* Pods_KarumiTestTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,6 +139,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 07BB381D24B4BE9900D1C5E0 /* Build configuration list for PBXNativeTarget "KarumiTest" */;
 			buildPhases = (
+				2C78C0369A1617D33D7803AB /* [CP] Check Pods Manifest.lock */,
 				07BB37FA24B4BE9200D1C5E0 /* Sources */,
 				07BB37FB24B4BE9200D1C5E0 /* Frameworks */,
 				07BB37FC24B4BE9200D1C5E0 /* Resources */,
@@ -123,6 +157,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 07BB382024B4BE9900D1C5E0 /* Build configuration list for PBXNativeTarget "KarumiTestTests" */;
 			buildPhases = (
+				6D7CDA84949C15512BFFCAB5 /* [CP] Check Pods Manifest.lock */,
 				07BB381024B4BE9900D1C5E0 /* Sources */,
 				07BB381124B4BE9900D1C5E0 /* Frameworks */,
 				07BB381224B4BE9900D1C5E0 /* Resources */,
@@ -194,6 +229,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2C78C0369A1617D33D7803AB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KarumiTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D7CDA84949C15512BFFCAB5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KarumiTestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		07BB37FA24B4BE9200D1C5E0 /* Sources */ = {
@@ -360,6 +442,7 @@
 		};
 		07BB381E24B4BE9900D1C5E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B768C4120D1A07A18BA36E6 /* Pods-KarumiTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -378,6 +461,7 @@
 		};
 		07BB381F24B4BE9900D1C5E0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 870E65B2E7B21A0AC932817C /* Pods-KarumiTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -396,6 +480,7 @@
 		};
 		07BB382124B4BE9900D1C5E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF8B603DD44BF568E33EAB75 /* Pods-KarumiTestTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -418,6 +503,7 @@
 		};
 		07BB382224B4BE9900D1C5E0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7291275760E7B64C1B1EA827 /* Pods-KarumiTestTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

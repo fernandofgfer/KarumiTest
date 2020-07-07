@@ -13,8 +13,12 @@ jobs:
     steps:
         - name: Checkout
           uses: actions/checkout@v2
+        - name: setup-cocoapods
+            uses: maxim-lobanov/setup-cocoapods@v1.1
+            with:
+                podfile-path: myApp/Podfile.lock
         - name: Run tests
-          run: xcodebuild -project KarumiTest.xcodeproj
+          run: xcodebuild -workspace KarumiTest.workspace
             -scheme KarumiTestTests
             -destination platform=iOS\ Simulator,OS=13.5,name=iPhone\ 11
             test | xcpretty
