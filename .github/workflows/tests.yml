@@ -14,8 +14,7 @@ jobs:
         - name: Checkout
           uses: actions/checkout@v2
         - name: Run tests
-          run: 
-          pod install --repo-update --clean-install
+          run: pod install --repo-update --clean-install
           xcodebuild -workspace KarumiTest.workspace
             -scheme KarumiTestTests
             -destination platform=iOS\ Simulator,OS=13.5,name=iPhone\ 11
