@@ -14,9 +14,9 @@ jobs:
         - name: Checkout
           uses: actions/checkout@v2
         - name: Install Dependencies
-            run: pod install --repo-update
+          run: pod install --repo-update
         - name: Run tests
-          xcodebuild -workspace KarumiTest.workspace
+          run: xcodebuild -workspace KarumiTest.workspace
             -scheme KarumiTestTests
             -destination platform=iOS\ Simulator,OS=13.5,name=iPhone\ 11
             test | xcpretty
