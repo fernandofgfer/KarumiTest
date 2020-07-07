@@ -2,15 +2,16 @@ name: Unit tests
 
 on:
   pull_request:
-    branches: [ develop ]
+    branches:
+        - develop
 
 jobs:
-  build:
-
+  Unit tests:
+    name: Unit tests
     runs-on: macos-latest
 
     steps:
-        - name: checkout
+        - name: Checkout
           uses: actions/checkout@v2
         - name: Run tests
           run: xcodebuild -project KarumiTest.xcodeproj \
