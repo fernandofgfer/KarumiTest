@@ -6,13 +6,25 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = AE7B4FB01588B9E6DF09CB79FC7CE7BD /* Build configuration list for PBXAggregateTarget "SwiftLint" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = SwiftLint;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		0D5714D8F9702E9AD88537F7144A5F1B /* Pods-KarumiTestTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AD11D91A228021B416A6391B309510C6 /* Pods-KarumiTestTests-dummy.m */; };
-		1C63037A19C7E4B3C581DBBC88458A6D /* Pods-KarumiTest-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D8EF00D4AC0D8D2AB50ED8D875CDE36 /* Pods-KarumiTest-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		21A5905D05B9CDAA0313D0ED6EA3600B /* Pods-KarumiTestTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D5FABD70F87919D73E6068D5AA376795 /* Pods-KarumiTestTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3FF4840C848F74B21338FC23E8618B69 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		65EEC517DD0114F0A005506C6E4E2AA6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		DDAAD04786004FB352FB083DD6DC8152 /* Pods-KarumiTest-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3473E6818EE57B12C18E1F9FE1CE6F9D /* Pods-KarumiTest-dummy.m */; };
+		8BDCC2DA52F77D4BE6A2CCB01F582D23 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		9CDC9A3892680A9927C68353765FFF7A /* Pods-KarumiTest-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3473E6818EE57B12C18E1F9FE1CE6F9D /* Pods-KarumiTest-dummy.m */; };
+		B7DBEA8FFEAFCD6BFC644E8B26A79B2E /* Pods-KarumiTest-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D8EF00D4AC0D8D2AB50ED8D875CDE36 /* Pods-KarumiTest-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,14 +35,23 @@
 			remoteGlobalIDString = C1F5FED314B4D392A63F23078DD97EEC;
 			remoteInfo = "Pods-KarumiTest";
 		};
+		AE68A0266CE5711EF68DE421DF973A26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52B60EC2A583F24ACBB69C113F5488B9;
+			remoteInfo = SwiftLint;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		3473E6818EE57B12C18E1F9FE1CE6F9D /* Pods-KarumiTest-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KarumiTest-dummy.m"; sourceTree = "<group>"; };
+		3EC0124719FE8EF5FDDD72C26F8A2F57 /* SwiftLint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.debug.xcconfig; sourceTree = "<group>"; };
 		5D67C5A26AE1A949BADEFB5EC4953D3B /* Pods-KarumiTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KarumiTest.debug.xcconfig"; sourceTree = "<group>"; };
 		6D8EF00D4AC0D8D2AB50ED8D875CDE36 /* Pods-KarumiTest-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KarumiTest-umbrella.h"; sourceTree = "<group>"; };
 		6F147D7BABCBA5C2040A3BD2B7FE6072 /* Pods_KarumiTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KarumiTestTests.framework; path = "Pods-KarumiTestTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EAB1DA481EDDC005A251D3A5E6BE4CD /* SwiftLint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.release.xcconfig; sourceTree = "<group>"; };
 		8AD120E3766389C8EAB8AD2172358904 /* Pods-KarumiTest-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KarumiTest-acknowledgements.plist"; sourceTree = "<group>"; };
 		95E3DCDE850FA73675BF70A069DEA90D /* Pods-KarumiTestTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KarumiTestTests-Info.plist"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -49,19 +70,19 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2F28B5A566BF5F1E0D280AA9B8F3ED23 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3FF4840C848F74B21338FC23E8618B69 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		8B520511761EBECFD43115532885E96B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				65EEC517DD0114F0A005506C6E4E2AA6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA4351ECF0F02F3D0F121B64F172308B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BDCC2DA52F77D4BE6A2CCB01F582D23 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +123,24 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		7FDA596DBE0337ACDFE55A210D54EF26 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3EC0124719FE8EF5FDDD72C26F8A2F57 /* SwiftLint.debug.xcconfig */,
+				7EAB1DA481EDDC005A251D3A5E6BE4CD /* SwiftLint.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftLint";
+			sourceTree = "<group>";
+		};
+		965877409E01FB3D85D85E90E6B30185 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D96179D43A67C5D5323B0682D32C133C /* SwiftLint */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +170,7 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				965877409E01FB3D85D85E90E6B30185 /* Pods */,
 				2EB43004337E0BEF2494D0AB02BFB9D9 /* Products */,
 				4346E3D630E2BE6076A02FB45BCD5745 /* Targets Support Files */,
 			);
@@ -144,22 +184,31 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D96179D43A67C5D5323B0682D32C133C /* SwiftLint */ = {
+			isa = PBXGroup;
+			children = (
+				7FDA596DBE0337ACDFE55A210D54EF26 /* Support Files */,
+			);
+			name = SwiftLint;
+			path = SwiftLint;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		7BB207D3CFF5174AC743B54DBAA1BE1E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7DBEA8FFEAFCD6BFC644E8B26A79B2E /* Pods-KarumiTest-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BC3114470F3DDA9DAD9DF4B1A62DF843 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				21A5905D05B9CDAA0313D0ED6EA3600B /* Pods-KarumiTestTests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C5DC21A4A32EF4C32BB3298788F58613 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1C63037A19C7E4B3C581DBBC88458A6D /* Pods-KarumiTest-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,16 +236,17 @@
 		};
 		C1F5FED314B4D392A63F23078DD97EEC /* Pods-KarumiTest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 28B794846581426EF11E5F6625164A53 /* Build configuration list for PBXNativeTarget "Pods-KarumiTest" */;
+			buildConfigurationList = B32D131D9F16680BC2194ED6B0EEE13B /* Build configuration list for PBXNativeTarget "Pods-KarumiTest" */;
 			buildPhases = (
-				C5DC21A4A32EF4C32BB3298788F58613 /* Headers */,
-				DBA19E9E3E3596C557506CCCDA31DC80 /* Sources */,
-				2F28B5A566BF5F1E0D280AA9B8F3ED23 /* Frameworks */,
-				4794406CE84FA8017037839C2752053E /* Resources */,
+				7BB207D3CFF5174AC743B54DBAA1BE1E /* Headers */,
+				2315A2F6AB0AC56087024F97B0247C9C /* Sources */,
+				EA4351ECF0F02F3D0F121B64F172308B /* Frameworks */,
+				D39278C6FBA43CE611C6E1277A34B118 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D40975D8EFE256449C795A51AB4E39D3 /* PBXTargetDependency */,
 			);
 			name = "Pods-KarumiTest";
 			productName = "Pods-KarumiTest";
@@ -227,6 +277,7 @@
 			targets = (
 				C1F5FED314B4D392A63F23078DD97EEC /* Pods-KarumiTest */,
 				373C64BDDA1475F9D44082C710A9F5A5 /* Pods-KarumiTestTests */,
+				52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */,
 			);
 		};
 /* End PBXProject section */
@@ -239,7 +290,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4794406CE84FA8017037839C2752053E /* Resources */ = {
+		D39278C6FBA43CE611C6E1277A34B118 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -249,19 +300,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2315A2F6AB0AC56087024F97B0247C9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CDC9A3892680A9927C68353765FFF7A /* Pods-KarumiTest-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		73C02F7FB06EC54AF9A43211E691806D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0D5714D8F9702E9AD88537F7144A5F1B /* Pods-KarumiTestTests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DBA19E9E3E3596C557506CCCDA31DC80 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DDAAD04786004FB352FB083DD6DC8152 /* Pods-KarumiTest-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +324,12 @@
 			name = "Pods-KarumiTest";
 			target = C1F5FED314B4D392A63F23078DD97EEC /* Pods-KarumiTest */;
 			targetProxy = 042B52A40F5420883515470C54FF6239 /* PBXContainerItemProxy */;
+		};
+		D40975D8EFE256449C795A51AB4E39D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftLint;
+			target = 52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */;
+			targetProxy = AE68A0266CE5711EF68DE421DF973A26 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -315,9 +372,42 @@
 			};
 			name = Debug;
 		};
-		8321DA9826AE108CF56BC46C1EC394BB /* Release */ = {
+		46EECD2DED30D7C5FE141C0B267C2D3F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D7FB5811A43A661ED7DFDDF433BC88D8 /* Pods-KarumiTest.release.xcconfig */;
+			baseConfigurationReference = 3EC0124719FE8EF5FDDD72C26F8A2F57 /* SwiftLint.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		55DD740115BE746C8DBB7753806D85D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EAB1DA481EDDC005A251D3A5E6BE4CD /* SwiftLint.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C0800E73576744BD82D142875FADCE07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA18A5EA0BDC4C34C58CE1BDD324C361 /* Pods-KarumiTestTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -330,7 +420,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-KarumiTest/Pods-KarumiTest-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-KarumiTestTests/Pods-KarumiTestTests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -339,7 +429,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-KarumiTest/Pods-KarumiTest.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-KarumiTestTests/Pods-KarumiTestTests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -354,7 +444,7 @@
 			};
 			name = Release;
 		};
-		857923624B1A5C0AFAB29FA401564772 /* Debug */ = {
+		D2F77711BC7FB38F5826900B4B6F1717 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5D67C5A26AE1A949BADEFB5EC4953D3B /* Pods-KarumiTest.debug.xcconfig */;
 			buildSettings = {
@@ -392,9 +482,9 @@
 			};
 			name = Debug;
 		};
-		C0800E73576744BD82D142875FADCE07 /* Release */ = {
+		D54C3A97B58B28143CD1E5F252BF57F6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EA18A5EA0BDC4C34C58CE1BDD324C361 /* Pods-KarumiTestTests.release.xcconfig */;
+			baseConfigurationReference = D7FB5811A43A661ED7DFDDF433BC88D8 /* Pods-KarumiTest.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -407,7 +497,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-KarumiTestTests/Pods-KarumiTestTests-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-KarumiTest/Pods-KarumiTest-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -416,7 +506,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-KarumiTestTests/Pods-KarumiTestTests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-KarumiTest/Pods-KarumiTest.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -567,20 +657,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		28B794846581426EF11E5F6625164A53 /* Build configuration list for PBXNativeTarget "Pods-KarumiTest" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				857923624B1A5C0AFAB29FA401564772 /* Debug */,
-				8321DA9826AE108CF56BC46C1EC394BB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DFD9D19FEEBF98DE271D7FBABCB845B5 /* Debug */,
 				F5F04600F5626DC980F02790D1ED2C19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE7B4FB01588B9E6DF09CB79FC7CE7BD /* Build configuration list for PBXAggregateTarget "SwiftLint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46EECD2DED30D7C5FE141C0B267C2D3F /* Debug */,
+				55DD740115BE746C8DBB7753806D85D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B32D131D9F16680BC2194ED6B0EEE13B /* Build configuration list for PBXNativeTarget "Pods-KarumiTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2F77711BC7FB38F5826900B4B6F1717 /* Debug */,
+				D54C3A97B58B28143CD1E5F252BF57F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

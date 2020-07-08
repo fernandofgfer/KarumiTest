@@ -3,7 +3,7 @@
 target 'KarumiTest' do
   use_frameworks!
 
-  # Pods for KarumiTest
+  pod 'SwiftLint'
 
   target 'KarumiTestTests' do
     inherit! :search_paths
