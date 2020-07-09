@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		071D083324B73D8500C2B6F0 /* LoginPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071D083224B73D8500C2B6F0 /* LoginPresenterProtocol.swift */; };
 		071D083A24B7508600C2B6F0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 071D083C24B7508600C2B6F0 /* Localizable.strings */; };
+		071D083E24B752A600C2B6F0 /* LoginInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071D083D24B752A600C2B6F0 /* LoginInteractorProtocol.swift */; };
+		071D084124B7552300C2B6F0 /* LoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071D084024B7552300C2B6F0 /* LoginUseCase.swift */; };
 		07BB380224B4BE9200D1C5E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BB380124B4BE9200D1C5E0 /* AppDelegate.swift */; };
 		07BB380424B4BE9200D1C5E0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BB380324B4BE9200D1C5E0 /* SceneDelegate.swift */; };
 		07BB380B24B4BE9900D1C5E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07BB380A24B4BE9900D1C5E0 /* Assets.xcassets */; };
@@ -38,6 +40,8 @@
 /* Begin PBXFileReference section */
 		071D083224B73D8500C2B6F0 /* LoginPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenterProtocol.swift; sourceTree = "<group>"; };
 		071D083B24B7508600C2B6F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		071D083D24B752A600C2B6F0 /* LoginInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractorProtocol.swift; sourceTree = "<group>"; };
+		071D084024B7552300C2B6F0 /* LoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCase.swift; sourceTree = "<group>"; };
 		07BB37FE24B4BE9200D1C5E0 /* KarumiTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KarumiTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07BB380124B4BE9200D1C5E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07BB380324B4BE9200D1C5E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +104,14 @@
 			path = Modules;
 			sourceTree = "<group>";
 		};
+		071D083F24B7551600C2B6F0 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				071D084024B7552300C2B6F0 /* LoginUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
 		07BB37F524B4BE9200D1C5E0 = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +135,7 @@
 		07BB380024B4BE9200D1C5E0 /* KarumiTest */ = {
 			isa = PBXGroup;
 			children = (
+				071D083F24B7551600C2B6F0 /* UseCases */,
 				071D083724B740F800C2B6F0 /* Modules */,
 				071D083424B740CC00C2B6F0 /* Resources */,
 				07BB380124B4BE9200D1C5E0 /* AppDelegate.swift */,
@@ -176,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				07BB382B24B5EFBD00D1C5E0 /* LoginInteractor.swift */,
+				071D083D24B752A600C2B6F0 /* LoginInteractorProtocol.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -378,8 +392,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				071D083E24B752A600C2B6F0 /* LoginInteractorProtocol.swift in Sources */,
 				071D083324B73D8500C2B6F0 /* LoginPresenterProtocol.swift in Sources */,
 				07BB382624B5EF8800D1C5E0 /* LoginViewController.swift in Sources */,
+				071D084124B7552300C2B6F0 /* LoginUseCase.swift in Sources */,
 				07BB382C24B5EFBD00D1C5E0 /* LoginInteractor.swift in Sources */,
 				07BB380224B4BE9200D1C5E0 /* AppDelegate.swift in Sources */,
 				07BB383224B73CB100D1C5E0 /* LoginViewProtocol.swift in Sources */,

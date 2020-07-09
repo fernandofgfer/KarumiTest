@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+class LoginInteractor: LoginInteractorProtocol {
+    func loggin(username: String, password: String) {
+        
+    }
+}

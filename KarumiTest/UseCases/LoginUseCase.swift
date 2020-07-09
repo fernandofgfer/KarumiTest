@@ -1,5 +1,5 @@
 //
-//  LoginViewProtocol.swift
+//  LoginUseCASE.swift
 //  KarumiTest
 //
 //  Created by Fernando Garcia Fernandez on 09/07/2020.
@@ -7,8 +7,3 @@
 //
 
 import Foundation
-
-protocol LoginViewProtocol: AnyObject {
-    func showUnfilledError()
-    func showLoginError()
-}

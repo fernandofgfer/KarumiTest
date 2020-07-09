@@ -7,3 +7,20 @@
 //
 
 import Foundation
+
+protocol LoginAssemblerProtocol {
+    func resolveLogin() -> LoginViewController
+}
+
+class LoginAssembler: LoginAssemblerProtocol {
+    
+    func resolveLogin() -> LoginViewController {
+        let interactor = LoginInteractor()
+        let presenter = LoginPresenter(interactor: interactor)
+        let viewController = LoginViewController(presenter: presenter)
+        presenter.view = viewController
+        return viewController
+        
+    }
+    
+}

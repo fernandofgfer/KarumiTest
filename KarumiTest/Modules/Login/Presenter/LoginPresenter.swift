@@ -8,8 +8,20 @@
 
 import Foundation
 
-class LoginPresenter {
+class LoginPresenter: LoginPresenterProtocol {
     
     weak var view: LoginViewProtocol?
+    var interactor: LoginInteractorProtocol
     
+    init(interactor: LoginInteractorProtocol) {
+        self.interactor = interactor
+    }
+    
+    func logginTapped(username: String?, password: String?) {
+        guard let userame = username, let password = password else {
+            view?.showUnfilledError()
+            return
+        }
+        interactor.loggin(username: userame, password: password)
+    }
 }

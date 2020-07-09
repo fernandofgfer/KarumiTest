@@ -15,6 +15,17 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var continueButton: UIButton!
     
+    let presenter: LoginPresenterProtocol
+    
+    init(presenter: LoginPresenterProtocol) {
+        self.presenter = presenter
+        super.init(nibName: "LoginViewController", bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpView()
@@ -41,8 +52,16 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func continueButtonTapped(sender: UIButton) {
-     
+        presenter.logginTapped(username: userNameTextField.text, password: passwordTextField.text)
     }
 }
 
-extension LoginViewController: LoginViewProtocol {}
+extension LoginViewController: LoginViewProtocol {
+    func showLoginError() {
+        
+    }
+    
+    func showUnfilledError() {
+        
+    }
+}
