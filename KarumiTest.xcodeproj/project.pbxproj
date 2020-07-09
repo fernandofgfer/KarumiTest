@@ -84,6 +84,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		071D083424B740CC00C2B6F0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				07BB380724B4BE9200D1C5E0 /* Main.storyboard */,
+				07BB380A24B4BE9900D1C5E0 /* Assets.xcassets */,
+				07BB380C24B4BE9900D1C5E0 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		071D083724B740F800C2B6F0 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				07BB382424B5EF7200D1C5E0 /* Login */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
 		07BB37F524B4BE9200D1C5E0 = {
 			isa = PBXGroup;
 			children = (
@@ -107,13 +125,11 @@
 		07BB380024B4BE9200D1C5E0 /* KarumiTest */ = {
 			isa = PBXGroup;
 			children = (
-				07BB382424B5EF7200D1C5E0 /* Login */,
+				071D083724B740F800C2B6F0 /* Modules */,
+				071D083424B740CC00C2B6F0 /* Resources */,
 				07BB380124B4BE9200D1C5E0 /* AppDelegate.swift */,
 				07BB380324B4BE9200D1C5E0 /* SceneDelegate.swift */,
 				07BB380524B4BE9200D1C5E0 /* ViewController.swift */,
-				07BB380724B4BE9200D1C5E0 /* Main.storyboard */,
-				07BB380A24B4BE9900D1C5E0 /* Assets.xcassets */,
-				07BB380C24B4BE9900D1C5E0 /* LaunchScreen.storyboard */,
 				07BB380F24B4BE9900D1C5E0 /* Info.plist */,
 			);
 			path = KarumiTest;
@@ -545,7 +561,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = fgfer.KarumiTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -564,7 +580,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = fgfer.KarumiTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
