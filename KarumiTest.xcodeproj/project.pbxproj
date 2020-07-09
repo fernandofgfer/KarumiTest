@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		071D083324B73D8500C2B6F0 /* LoginPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071D083224B73D8500C2B6F0 /* LoginPresenterProtocol.swift */; };
 		07BB380224B4BE9200D1C5E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BB380124B4BE9200D1C5E0 /* AppDelegate.swift */; };
 		07BB380424B4BE9200D1C5E0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BB380324B4BE9200D1C5E0 /* SceneDelegate.swift */; };
 		07BB380624B4BE9200D1C5E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BB380524B4BE9200D1C5E0 /* ViewController.swift */; };
@@ -14,6 +15,13 @@
 		07BB380B24B4BE9900D1C5E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07BB380A24B4BE9900D1C5E0 /* Assets.xcassets */; };
 		07BB380E24B4BE9900D1C5E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07BB380C24B4BE9900D1C5E0 /* LaunchScreen.storyboard */; };
 		07BB381924B4BE9900D1C5E0 /* KarumiTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BB381824B4BE9900D1C5E0 /* KarumiTestTests.swift */; };
+		07BB382624B5EF8800D1C5E0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BB382524B5EF8800D1C5E0 /* LoginViewController.swift */; };
+		07BB382824B5EF9700D1C5E0 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07BB382724B5EF9700D1C5E0 /* LoginViewController.xib */; };
+		07BB382A24B5EFB500D1C5E0 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BB382924B5EFB500D1C5E0 /* LoginPresenter.swift */; };
+		07BB382C24B5EFBD00D1C5E0 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BB382B24B5EFBD00D1C5E0 /* LoginInteractor.swift */; };
+		07BB382E24B5EFC600D1C5E0 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BB382D24B5EFC600D1C5E0 /* LoginRouter.swift */; };
+		07BB383024B5EFCF00D1C5E0 /* LoginAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BB382F24B5EFCF00D1C5E0 /* LoginAssembler.swift */; };
+		07BB383224B73CB100D1C5E0 /* LoginViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BB383124B73CB100D1C5E0 /* LoginViewProtocol.swift */; };
 		1B888FECA6AD260014435A4A /* Pods_KarumiTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4894851BF4F20FFDDCA55754 /* Pods_KarumiTestTests.framework */; };
 		51F926DA88E12995EB51FA1B /* Pods_KarumiTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 654544B50721BAC193F00D77 /* Pods_KarumiTest.framework */; };
 /* End PBXBuildFile section */
@@ -29,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		071D083224B73D8500C2B6F0 /* LoginPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenterProtocol.swift; sourceTree = "<group>"; };
 		07BB37FE24B4BE9200D1C5E0 /* KarumiTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KarumiTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07BB380124B4BE9200D1C5E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07BB380324B4BE9200D1C5E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +49,13 @@
 		07BB381424B4BE9900D1C5E0 /* KarumiTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KarumiTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07BB381824B4BE9900D1C5E0 /* KarumiTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KarumiTestTests.swift; sourceTree = "<group>"; };
 		07BB381A24B4BE9900D1C5E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07BB382524B5EF8800D1C5E0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		07BB382724B5EF9700D1C5E0 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		07BB382924B5EFB500D1C5E0 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		07BB382B24B5EFBD00D1C5E0 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		07BB382D24B5EFC600D1C5E0 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		07BB382F24B5EFCF00D1C5E0 /* LoginAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAssembler.swift; sourceTree = "<group>"; };
+		07BB383124B73CB100D1C5E0 /* LoginViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewProtocol.swift; sourceTree = "<group>"; };
 		4894851BF4F20FFDDCA55754 /* Pods_KarumiTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KarumiTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		654544B50721BAC193F00D77 /* Pods_KarumiTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KarumiTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7291275760E7B64C1B1EA827 /* Pods-KarumiTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KarumiTestTests.release.xcconfig"; path = "Target Support Files/Pods-KarumiTestTests/Pods-KarumiTestTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -91,6 +107,7 @@
 		07BB380024B4BE9200D1C5E0 /* KarumiTest */ = {
 			isa = PBXGroup;
 			children = (
+				07BB382424B5EF7200D1C5E0 /* Login */,
 				07BB380124B4BE9200D1C5E0 /* AppDelegate.swift */,
 				07BB380324B4BE9200D1C5E0 /* SceneDelegate.swift */,
 				07BB380524B4BE9200D1C5E0 /* ViewController.swift */,
@@ -109,6 +126,53 @@
 				07BB381A24B4BE9900D1C5E0 /* Info.plist */,
 			);
 			path = KarumiTestTests;
+			sourceTree = "<group>";
+		};
+		07BB382424B5EF7200D1C5E0 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				07BB383624B73D0800D1C5E0 /* Router */,
+				07BB383524B73D0300D1C5E0 /* Interactor */,
+				07BB383424B73CFB00D1C5E0 /* Presenter */,
+				07BB383324B73CBB00D1C5E0 /* View */,
+				07BB382F24B5EFCF00D1C5E0 /* LoginAssembler.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		07BB383324B73CBB00D1C5E0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				07BB382524B5EF8800D1C5E0 /* LoginViewController.swift */,
+				07BB383124B73CB100D1C5E0 /* LoginViewProtocol.swift */,
+				07BB382724B5EF9700D1C5E0 /* LoginViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		07BB383424B73CFB00D1C5E0 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				07BB382924B5EFB500D1C5E0 /* LoginPresenter.swift */,
+				071D083224B73D8500C2B6F0 /* LoginPresenterProtocol.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		07BB383524B73D0300D1C5E0 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				07BB382B24B5EFBD00D1C5E0 /* LoginInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		07BB383624B73D0800D1C5E0 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				07BB382D24B5EFC600D1C5E0 /* LoginRouter.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		265574C4D975BF74E3B16202 /* Pods */ = {
@@ -215,6 +279,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07BB382824B5EF9700D1C5E0 /* LoginViewController.xib in Resources */,
 				07BB380E24B4BE9900D1C5E0 /* LaunchScreen.storyboard in Resources */,
 				07BB380B24B4BE9900D1C5E0 /* Assets.xcassets in Resources */,
 				07BB380924B4BE9200D1C5E0 /* Main.storyboard in Resources */,
@@ -300,9 +365,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				071D083324B73D8500C2B6F0 /* LoginPresenterProtocol.swift in Sources */,
+				07BB382624B5EF8800D1C5E0 /* LoginViewController.swift in Sources */,
 				07BB380624B4BE9200D1C5E0 /* ViewController.swift in Sources */,
+				07BB382C24B5EFBD00D1C5E0 /* LoginInteractor.swift in Sources */,
 				07BB380224B4BE9200D1C5E0 /* AppDelegate.swift in Sources */,
+				07BB383224B73CB100D1C5E0 /* LoginViewProtocol.swift in Sources */,
 				07BB380424B4BE9200D1C5E0 /* SceneDelegate.swift in Sources */,
+				07BB382E24B5EFC600D1C5E0 /* LoginRouter.swift in Sources */,
+				07BB383024B5EFCF00D1C5E0 /* LoginAssembler.swift in Sources */,
+				07BB382A24B5EFB500D1C5E0 /* LoginPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
