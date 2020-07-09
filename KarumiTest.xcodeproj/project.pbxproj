@@ -11,6 +11,8 @@
 		071D083A24B7508600C2B6F0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 071D083C24B7508600C2B6F0 /* Localizable.strings */; };
 		071D083E24B752A600C2B6F0 /* LoginInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071D083D24B752A600C2B6F0 /* LoginInteractorProtocol.swift */; };
 		071D084124B7552300C2B6F0 /* LoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071D084024B7552300C2B6F0 /* LoginUseCase.swift */; };
+		071D084324B75A7B00C2B6F0 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071D084224B75A7B00C2B6F0 /* ApiClient.swift */; };
+		071D084624B75AE600C2B6F0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071D084524B75AE600C2B6F0 /* User.swift */; };
 		07BB380224B4BE9200D1C5E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BB380124B4BE9200D1C5E0 /* AppDelegate.swift */; };
 		07BB380424B4BE9200D1C5E0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BB380324B4BE9200D1C5E0 /* SceneDelegate.swift */; };
 		07BB380B24B4BE9900D1C5E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07BB380A24B4BE9900D1C5E0 /* Assets.xcassets */; };
@@ -42,6 +44,8 @@
 		071D083B24B7508600C2B6F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		071D083D24B752A600C2B6F0 /* LoginInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractorProtocol.swift; sourceTree = "<group>"; };
 		071D084024B7552300C2B6F0 /* LoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCase.swift; sourceTree = "<group>"; };
+		071D084224B75A7B00C2B6F0 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		071D084524B75AE600C2B6F0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		07BB37FE24B4BE9200D1C5E0 /* KarumiTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KarumiTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07BB380124B4BE9200D1C5E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07BB380324B4BE9200D1C5E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +116,14 @@
 			path = UseCases;
 			sourceTree = "<group>";
 		};
+		071D084424B75ADE00C2B6F0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				071D084524B75AE600C2B6F0 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		07BB37F524B4BE9200D1C5E0 = {
 			isa = PBXGroup;
 			children = (
@@ -135,12 +147,14 @@
 		07BB380024B4BE9200D1C5E0 /* KarumiTest */ = {
 			isa = PBXGroup;
 			children = (
+				071D084424B75ADE00C2B6F0 /* Model */,
 				071D083F24B7551600C2B6F0 /* UseCases */,
 				071D083724B740F800C2B6F0 /* Modules */,
 				071D083424B740CC00C2B6F0 /* Resources */,
 				07BB380124B4BE9200D1C5E0 /* AppDelegate.swift */,
 				07BB380324B4BE9200D1C5E0 /* SceneDelegate.swift */,
 				07BB380F24B4BE9900D1C5E0 /* Info.plist */,
+				071D084224B75A7B00C2B6F0 /* ApiClient.swift */,
 			);
 			path = KarumiTest;
 			sourceTree = "<group>";
@@ -392,6 +406,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				071D084624B75AE600C2B6F0 /* User.swift in Sources */,
 				071D083E24B752A600C2B6F0 /* LoginInteractorProtocol.swift in Sources */,
 				071D083324B73D8500C2B6F0 /* LoginPresenterProtocol.swift in Sources */,
 				07BB382624B5EF8800D1C5E0 /* LoginViewController.swift in Sources */,
@@ -403,6 +418,7 @@
 				07BB382E24B5EFC600D1C5E0 /* LoginRouter.swift in Sources */,
 				07BB383024B5EFCF00D1C5E0 /* LoginAssembler.swift in Sources */,
 				07BB382A24B5EFB500D1C5E0 /* LoginPresenter.swift in Sources */,
+				071D084324B75A7B00C2B6F0 /* ApiClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
