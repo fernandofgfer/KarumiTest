@@ -1,5 +1,5 @@
 //
-//  LoginPresenterProtocol.swift
+//  LoginInteractorProtocol.swift
 //  KarumiTest
 //
 //  Created by Fernando Garcia Fernandez on 09/07/2020.
@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol LoginPresenterProtocol: AnyObject {
-    func logginTapped(username: String?, password: String?)
+protocol LoginInteractorProtocol {
+    func loggin(username: String, password: String)
 }

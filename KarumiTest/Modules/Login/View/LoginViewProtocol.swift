@@ -8,4 +8,7 @@
 
 import Foundation
 
-protocol LoginViewProtocol: AnyObject {}
+protocol LoginViewProtocol: AnyObject {
+    func showUnfilledError()
+    func showLoginError()
+}
