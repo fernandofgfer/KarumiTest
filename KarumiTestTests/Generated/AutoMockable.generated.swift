@@ -45,6 +45,43 @@ class LoginInteractorProtocolMock: LoginInteractorProtocol {
     }
 
 }
+class LoginPresenterOutputProtocolMock: LoginPresenterOutputProtocol {
+
+    //MARK: - userReceived
+
+    var userReceivedUserCallsCount = 0
+    var userReceivedUserCalled: Bool {
+        return userReceivedUserCallsCount > 0
+    }
+    var userReceivedUserReceivedUser: User?
+    var userReceivedUserReceivedInvocations: [User] = []
+    var userReceivedUserClosure: ((User) -> Void)?
+
+    func userReceived(user: User) {
+        userReceivedUserCallsCount += 1
+        userReceivedUserReceivedUser = user
+        userReceivedUserReceivedInvocations.append(user)
+        userReceivedUserClosure?(user)
+    }
+
+    //MARK: - errorReceived
+
+    var errorReceivedErrorCallsCount = 0
+    var errorReceivedErrorCalled: Bool {
+        return errorReceivedErrorCallsCount > 0
+    }
+    var errorReceivedErrorReceivedError: Error?
+    var errorReceivedErrorReceivedInvocations: [Error] = []
+    var errorReceivedErrorClosure: ((Error) -> Void)?
+
+    func errorReceived(error: Error) {
+        errorReceivedErrorCallsCount += 1
+        errorReceivedErrorReceivedError = error
+        errorReceivedErrorReceivedInvocations.append(error)
+        errorReceivedErrorClosure?(error)
+    }
+
+}
 class LoginRouterProtocolMock: LoginRouterProtocol {
 
     //MARK: - pushToLogout
@@ -58,6 +95,26 @@ class LoginRouterProtocolMock: LoginRouterProtocol {
     func pushToLogout() {
         pushToLogoutCallsCount += 1
         pushToLogoutClosure?()
+    }
+
+}
+class LoginUseCaseProtocolMock: LoginUseCaseProtocol {
+
+    //MARK: - fetch
+
+    var fetchUsernamePasswordCompletionCallsCount = 0
+    var fetchUsernamePasswordCompletionCalled: Bool {
+        return fetchUsernamePasswordCompletionCallsCount > 0
+    }
+    var fetchUsernamePasswordCompletionReceivedArguments: (username: String, password: String, completion: Callback<User>)?
+    var fetchUsernamePasswordCompletionReceivedInvocations: [(username: String, password: String, completion: Callback<User>)] = []
+    var fetchUsernamePasswordCompletionClosure: ((String, String, @escaping Callback<User>) -> Void)?
+
+    func fetch(username: String, password: String, completion: @escaping Callback<User>) {
+        fetchUsernamePasswordCompletionCallsCount += 1
+        fetchUsernamePasswordCompletionReceivedArguments = (username: username, password: password, completion: completion)
+        fetchUsernamePasswordCompletionReceivedInvocations.append((username: username, password: password, completion: completion))
+        fetchUsernamePasswordCompletionClosure?(username, password, completion)
     }
 
 }
