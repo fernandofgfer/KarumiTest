@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// sourcery: AutoMockable
 protocol LoginViewProtocol: AnyObject {
     func showUnfilledError()
     func showLoginError()

@@ -6,30 +6,84 @@
 //  Copyright © 2020 Fernando Garcia Fernandez. All rights reserved.
 //
 
+@testable import KarumiTest
 import XCTest
 
 class LoginPresenterTests: XCTestCase {
-
+    
+    var sut: LoginPresenter!
+    var interactor: LoginInteractorProtocolMock!
+    var router: LoginRouterProtocolMock!
+    var view: LoginViewProtocolMock!
     
     override func setUpWithError() throws {
         super.setUp()
-        
+        interactor = LoginInteractorProtocolMock()
+        router = LoginRouterProtocolMock()
+        view = LoginViewProtocolMock()
+        sut = LoginPresenter(interactor: interactor, router: router)
+        sut.view = view
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        sut = nil
+        view = nil
+        router = nil
+        interactor = nil
+        super.tearDown()
+    }
+    
+    func testLoginWithCredentialsShouldCallToLoggin() {
+        // Given
+        let userName = "user"
+        let password = "1234"
+        
+        // When
+        sut.logginTapped(username: userName, password: password)
+        
+        // Then
+        XCTAssertEqual(1, interactor.logginUsernamePasswordCallsCount)
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testLoginWithoutUsernameShouldCallShowUnfilledError() {
+        // Given
+        let password = "1234"
+        
+        // When
+        sut.logginTapped(username: nil, password: password)
+        
+        // Then
+        XCTAssertEqual(1, view.showUnfilledErrorCallsCount)
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func testLoginWithoutPasswordShouldCallShowUnfilledError() {
+        // Given
+        let userName = "user"
+        
+        // When
+        sut.logginTapped(username: userName, password: nil)
+        
+        // Then
+        XCTAssertEqual(1, view.showUnfilledErrorCallsCount)
     }
-
+    
+    func testUserReceivedShouldCallPushToLogout() {
+        // Given
+        let user = User(userId: 1, userToken: "asdasd")
+        
+        // When
+        sut.userReceived(user: user)
+        
+        // Then
+        XCTAssertEqual(1, router.pushToLogoutCallsCount)
+    }
+    
+    func testErrorReceivedShouldCallShowLoginError() {
+        // When
+        sut.errorReceived(error: NSError())
+        
+        // Then
+        XCTAssertEqual(1, view.showLoginErrorCallsCount)
+    }
+    
 }
