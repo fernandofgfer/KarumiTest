@@ -8,8 +8,9 @@
 
 import Foundation
 
+
 protocol LoginUseCaseProtocol {
-    func fetch(username: String, password: String, completion: @escaping (_ user: User) -> Void)
+    func fetch(username: String, password: String, completion: @escaping Callback<User>)
 }
 
 class LoginUseCase: LoginUseCaseProtocol {
@@ -20,10 +21,8 @@ class LoginUseCase: LoginUseCaseProtocol {
         self.apiClient = apiClient
     }
     
-    func fetch(username: String, password: String, completion: @escaping (_ user: User) -> Void) {
-        apiClient.fetch(resource: getResource(username: username, password: password)) { user in
-            completion(user)
-        }
+    func fetch(username: String, password: String, completion: @escaping Callback<User>) {
+        apiClient.fetch(resource: getResource(username: username, password: password), completion: completion)
     }
     
     private func getResource(username: String, password: String) -> Resource {

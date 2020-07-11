@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol LoginPresenterProtocol {
+protocol LoginPresenterProtocol: AnyObject {
     func logginTapped(username: String?, password: String?)
 }

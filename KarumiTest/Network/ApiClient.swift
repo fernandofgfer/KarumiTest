@@ -8,8 +8,10 @@
 
 import Foundation
 
+typealias Callback<T> = (Result<T, Error>) -> Void
+
 protocol ApiClientProtocol {
-    func fetch<T: Decodable>(resource: Resource, completion: @escaping (_ data: T) -> Void)
+    func fetch<T: Decodable>(resource: Resource, completion: @escaping Callback<T>)
 }
 
 struct Resource {

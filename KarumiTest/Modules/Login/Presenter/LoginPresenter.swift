@@ -25,3 +25,13 @@ class LoginPresenter: LoginPresenterProtocol {
         interactor.loggin(username: userame, password: password)
     }
 }
+
+extension LoginPresenter: LoginPresenterOutputProtocol {
+    func userReceived(user: User) {
+        
+    }
+    
+    func errorReceived(error: Error) {
+        
+    }
+}
