@@ -4,6 +4,7 @@ target 'KarumiTest' do
   use_frameworks!
 
   pod 'SwiftLint'
+  pod 'Sourcery'
 
   target 'KarumiTestTests' do
     inherit! :search_paths
