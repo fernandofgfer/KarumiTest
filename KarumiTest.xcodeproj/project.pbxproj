@@ -26,6 +26,8 @@
 		0719649124BB060D002896FC /* LogoutRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0719649024BB060D002896FC /* LogoutRouterProtocol.swift */; };
 		0719649324BB0629002896FC /* LogoutRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0719649224BB0629002896FC /* LogoutRouter.swift */; };
 		0719649524BB067E002896FC /* LogoutAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0719649424BB067E002896FC /* LogoutAssembler.swift */; };
+		0719649824BB0909002896FC /* LogoutPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0719649724BB0909002896FC /* LogoutPresenterTests.swift */; };
+		0719649A24BB0A3B002896FC /* LogoutInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0719649924BB0A3B002896FC /* LogoutInteractorTests.swift */; };
 		071D083324B73D8500C2B6F0 /* LoginPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071D083224B73D8500C2B6F0 /* LoginPresenterProtocol.swift */; };
 		071D083A24B7508600C2B6F0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 071D083C24B7508600C2B6F0 /* Localizable.strings */; };
 		071D083E24B752A600C2B6F0 /* LoginInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071D083D24B752A600C2B6F0 /* LoginInteractorProtocol.swift */; };
@@ -78,6 +80,8 @@
 		0719649024BB060D002896FC /* LogoutRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutRouterProtocol.swift; sourceTree = "<group>"; };
 		0719649224BB0629002896FC /* LogoutRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutRouter.swift; sourceTree = "<group>"; };
 		0719649424BB067E002896FC /* LogoutAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutAssembler.swift; sourceTree = "<group>"; };
+		0719649724BB0909002896FC /* LogoutPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutPresenterTests.swift; sourceTree = "<group>"; };
+		0719649924BB0A3B002896FC /* LogoutInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutInteractorTests.swift; sourceTree = "<group>"; };
 		071D083224B73D8500C2B6F0 /* LoginPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenterProtocol.swift; sourceTree = "<group>"; };
 		071D083B24B7508600C2B6F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		071D083D24B752A600C2B6F0 /* LoginInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractorProtocol.swift; sourceTree = "<group>"; };
@@ -157,6 +161,7 @@
 		0719647724B9C0BA002896FC /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				0719649624BB08F8002896FC /* Logout */,
 				0719647824B9C0C2002896FC /* Login */,
 			);
 			path = Modules;
@@ -174,6 +179,7 @@
 		0719647D24BB0389002896FC /* Logout */ = {
 			isa = PBXGroup;
 			children = (
+				0719649424BB067E002896FC /* LogoutAssembler.swift */,
 				0719648F24BB05FB002896FC /* Router */,
 				0719648A24BB0539002896FC /* Interactor */,
 				0719648324BB044A002896FC /* Presenter */,
@@ -215,9 +221,17 @@
 			children = (
 				0719649024BB060D002896FC /* LogoutRouterProtocol.swift */,
 				0719649224BB0629002896FC /* LogoutRouter.swift */,
-				0719649424BB067E002896FC /* LogoutAssembler.swift */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		0719649624BB08F8002896FC /* Logout */ = {
+			isa = PBXGroup;
+			children = (
+				0719649724BB0909002896FC /* LogoutPresenterTests.swift */,
+				0719649924BB0A3B002896FC /* LogoutInteractorTests.swift */,
+			);
+			path = Logout;
 			sourceTree = "<group>";
 		};
 		071D083424B740CC00C2B6F0 /* Resources */ = {
@@ -601,7 +615,9 @@
 				0719647524B9BD08002896FC /* AutoEquatable.generated.swift in Sources */,
 				07BB381924B4BE9900D1C5E0 /* KarumiTestTests.swift in Sources */,
 				0719647C24B9C407002896FC /* LoginInteractorTests.swift in Sources */,
+				0719649824BB0909002896FC /* LogoutPresenterTests.swift in Sources */,
 				0719647624B9BD08002896FC /* AutoMockable.generated.swift in Sources */,
+				0719649A24BB0A3B002896FC /* LogoutInteractorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

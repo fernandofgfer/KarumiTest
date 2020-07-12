@@ -19,7 +19,6 @@ class LogoutPresenter: LogoutPresenterProtocol {
         self.router = router
     }
     
-    
     func didTapOnLogout() {
         interactor.closeSession()
     }

@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// sourcery: AutoMockable
 protocol LogoutInteractorProtocol {
     func closeSession()
 }
