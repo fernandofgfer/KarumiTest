@@ -14,6 +14,8 @@
 		0719647024B9B7AC002896FC /* NavigableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0719646F24B9B7AC002896FC /* NavigableView.swift */; };
 		0719647524B9BD08002896FC /* AutoEquatable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0719647324B9BD08002896FC /* AutoEquatable.generated.swift */; };
 		0719647624B9BD08002896FC /* AutoMockable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0719647424B9BD08002896FC /* AutoMockable.generated.swift */; };
+		0719647A24B9C0D6002896FC /* LoginPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0719647924B9C0D6002896FC /* LoginPresenterTests.swift */; };
+		0719647C24B9C407002896FC /* LoginInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0719647B24B9C407002896FC /* LoginInteractorTests.swift */; };
 		071D083324B73D8500C2B6F0 /* LoginPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071D083224B73D8500C2B6F0 /* LoginPresenterProtocol.swift */; };
 		071D083A24B7508600C2B6F0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 071D083C24B7508600C2B6F0 /* Localizable.strings */; };
 		071D083E24B752A600C2B6F0 /* LoginInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071D083D24B752A600C2B6F0 /* LoginInteractorProtocol.swift */; };
@@ -54,6 +56,8 @@
 		0719646F24B9B7AC002896FC /* NavigableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigableView.swift; sourceTree = "<group>"; };
 		0719647324B9BD08002896FC /* AutoEquatable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoEquatable.generated.swift; sourceTree = "<group>"; };
 		0719647424B9BD08002896FC /* AutoMockable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoMockable.generated.swift; sourceTree = "<group>"; };
+		0719647924B9C0D6002896FC /* LoginPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenterTests.swift; sourceTree = "<group>"; };
+		0719647B24B9C407002896FC /* LoginInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractorTests.swift; sourceTree = "<group>"; };
 		071D083224B73D8500C2B6F0 /* LoginPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenterProtocol.swift; sourceTree = "<group>"; };
 		071D083B24B7508600C2B6F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		071D083D24B752A600C2B6F0 /* LoginInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractorProtocol.swift; sourceTree = "<group>"; };
@@ -130,6 +134,23 @@
 			path = Generated;
 			sourceTree = "<group>";
 		};
+		0719647724B9C0BA002896FC /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				0719647824B9C0C2002896FC /* Login */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		0719647824B9C0C2002896FC /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				0719647924B9C0D6002896FC /* LoginPresenterTests.swift */,
+				0719647B24B9C407002896FC /* LoginInteractorTests.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		071D083424B740CC00C2B6F0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -204,6 +225,7 @@
 		07BB381724B4BE9900D1C5E0 /* KarumiTestTests */ = {
 			isa = PBXGroup;
 			children = (
+				0719647724B9C0BA002896FC /* Modules */,
 				0719647224B9BBCE002896FC /* Generated */,
 				07BB381824B4BE9900D1C5E0 /* KarumiTestTests.swift */,
 				07BB381A24B4BE9900D1C5E0 /* Info.plist */,
@@ -495,8 +517,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0719647A24B9C0D6002896FC /* LoginPresenterTests.swift in Sources */,
 				0719647524B9BD08002896FC /* AutoEquatable.generated.swift in Sources */,
 				07BB381924B4BE9900D1C5E0 /* KarumiTestTests.swift in Sources */,
+				0719647C24B9C407002896FC /* LoginInteractorTests.swift in Sources */,
 				0719647624B9BD08002896FC /* AutoMockable.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

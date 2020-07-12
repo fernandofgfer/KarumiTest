@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// sourcery: AutoMockable
 protocol LoginPresenterOutputProtocol: AnyObject {
     func userReceived(user: User)
     func errorReceived(error: Error)

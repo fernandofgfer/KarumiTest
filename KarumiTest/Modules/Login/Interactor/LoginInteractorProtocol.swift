@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// sourcery: AutoMockable
 protocol LoginInteractorProtocol {
     func loggin(username: String, password: String)
 }

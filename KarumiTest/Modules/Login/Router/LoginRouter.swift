@@ -8,7 +8,7 @@
 
 import Foundation
 
-class LoginRouter : LoginRouterProtocol {
+class LoginRouter: LoginRouterProtocol {
     
     init() {
         

@@ -16,8 +16,9 @@ class LoginAssembler: LoginAssemblerProtocol {
     
     func resolveLogin() -> LoginViewController {
         let interactor = LoginInteractor(loginUseCase: getLoginUseCase())
-        let presenter = LoginPresenter(interactor: interactor)
         let router = LoginRouter()
+        let presenter = LoginPresenter(interactor: interactor,
+                                       router: router)
         let viewController = LoginViewController(presenter: presenter)
         presenter.view = viewController
         router.view = viewController

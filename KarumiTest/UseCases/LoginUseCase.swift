@@ -8,7 +8,7 @@
 
 import Foundation
 
-
+/// sourcery: AutoMockable
 protocol LoginUseCaseProtocol {
     func fetch(username: String, password: String, completion: @escaping Callback<User>)
 }

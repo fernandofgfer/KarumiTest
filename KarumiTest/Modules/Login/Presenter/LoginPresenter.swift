@@ -11,10 +11,13 @@ import Foundation
 class LoginPresenter: LoginPresenterProtocol {
     
     weak var view: LoginViewProtocol?
-    var interactor: LoginInteractorProtocol
+    let interactor: LoginInteractorProtocol
+    let router: LoginRouterProtocol
     
-    init(interactor: LoginInteractorProtocol) {
+    init(interactor: LoginInteractorProtocol,
+         router: LoginRouterProtocol) {
         self.interactor = interactor
+        self.router = router
     }
     
     func logginTapped(username: String?, password: String?) {
@@ -28,10 +31,10 @@ class LoginPresenter: LoginPresenterProtocol {
 
 extension LoginPresenter: LoginPresenterOutputProtocol {
     func userReceived(user: User) {
-        
+        router.pushToLogout()
     }
     
     func errorReceived(error: Error) {
-        
+        view?.showLoginError()
     }
 }
