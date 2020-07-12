@@ -26,6 +26,20 @@ class LogoutViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupView()
+    }
+    
+    private func setupView() {
+        setupStyle()
+        setLocalizable()
+    }
+    
+    private func setupStyle() {
+        logoutButton.setTitleColor(.red, for: .normal)
+    }
+    
+    private func setLocalizable() {
+        logoutButton.setTitle(NSLocalizedString("logout.title", comment: ""), for: .normal)
     }
     
     @IBAction func logoutButtonTapped(sender: UIButton) {
