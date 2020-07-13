@@ -11,8 +11,14 @@ import Foundation
 class LogoutInteractor: LogoutInteractorProtocol {
     
     weak var presenter: LogoutPresenterOutputProtocol?
+    let userStore: UserStoreProtocol
+    
+    init(userStore: UserStoreProtocol) {
+        self.userStore = userStore
+    }
     
     func closeSession() {
+        userStore.removeUser()
         presenter?.popInNavigation()
     }
 }

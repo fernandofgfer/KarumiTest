@@ -44,6 +44,19 @@ class LoginInteractorProtocolMock: LoginInteractorProtocol {
         logginUsernamePasswordClosure?(username, password)
     }
 
+    //MARK: - checkIfUserIsStored
+
+    var checkIfUserIsStoredCallsCount = 0
+    var checkIfUserIsStoredCalled: Bool {
+        return checkIfUserIsStoredCallsCount > 0
+    }
+    var checkIfUserIsStoredClosure: (() -> Void)?
+
+    func checkIfUserIsStored() {
+        checkIfUserIsStoredCallsCount += 1
+        checkIfUserIsStoredClosure?()
+    }
+
 }
 class LoginPresenterOutputProtocolMock: LoginPresenterOutputProtocol {
 

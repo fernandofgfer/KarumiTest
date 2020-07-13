@@ -10,12 +10,8 @@ import Foundation
 
 class LoginRouter: LoginRouterProtocol {
     
-    init() {
-        
-    }
-    
     weak var view: NavigableView?
     func pushToLogout() {
-        
+        view?.pushView(LogoutAssembler().resolveLogout(), animated: true)
     }
 }

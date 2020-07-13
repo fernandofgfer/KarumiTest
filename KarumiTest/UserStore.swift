@@ -10,7 +10,8 @@ import Foundation
 
 protocol UserStoreProtocol {
     func saveUser(_ user: User)
-    func isUserSaved() -> Bool
+    func removeUser()
+    func isUserSaved() -> User?
 }
 
 class UserStore: UserStoreProtocol {
@@ -22,10 +23,17 @@ class UserStore: UserStoreProtocol {
     }
     
     func saveUser(_ user: User) {
-        userDefaults.set(user, forKey: "user")
+        userDefaults.set(try? PropertyListEncoder().encode(user), forKey: "user") 
     }
     
-    func isUserSaved() -> Bool {
-        return (userDefaults.object(forKey: "user") as? User) != nil
+    func isUserSaved() -> User? {
+        guard let userData = userDefaults.object(forKey: "user") as? Data,
+            let user = try? PropertyListDecoder().decode(User.self, from: userData) else { return nil }
+        
+        return user
+    }
+    
+    func removeUser() {
+        userDefaults.removeObject(forKey: "user")
     }
 }

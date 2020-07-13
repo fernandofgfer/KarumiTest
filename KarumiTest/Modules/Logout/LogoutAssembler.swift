@@ -17,12 +17,18 @@ class LogoutAssembler: LogoutAssemblerProtocol {
     func resolveLogout() -> LogoutViewController {
         
         let router = LogoutRouter()
-        let interactor = LogoutInteractor()
+        let interactor = LogoutInteractor(userStore: resolveUserStore())
         let presenter = LogoutPresenter(interactor: interactor, router: router)
         let viewController = LogoutViewController(presenter: presenter)
         interactor.presenter = presenter
+        router.view = viewController
+        
         
         return viewController
+    }
+    
+    private func resolveUserStore() -> UserStoreProtocol {
+        return UserStore(userDefaults: UserDefaults.standard)
     }
     
 }

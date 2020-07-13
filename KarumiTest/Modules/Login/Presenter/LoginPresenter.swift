@@ -27,6 +27,10 @@ class LoginPresenter: LoginPresenterProtocol {
         }
         interactor.loggin(username: userame, password: password)
     }
+    
+    func viewIsReady() {
+        interactor.checkIfUserIsStored()
+    }
 }
 
 extension LoginPresenter: LoginPresenterOutputProtocol {
