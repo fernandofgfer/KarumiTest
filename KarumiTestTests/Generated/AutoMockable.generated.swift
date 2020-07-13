@@ -147,3 +147,51 @@ class LoginViewProtocolMock: LoginViewProtocol {
     }
 
 }
+class LogoutInteractorProtocolMock: LogoutInteractorProtocol {
+
+    //MARK: - closeSession
+
+    var closeSessionCallsCount = 0
+    var closeSessionCalled: Bool {
+        return closeSessionCallsCount > 0
+    }
+    var closeSessionClosure: (() -> Void)?
+
+    func closeSession() {
+        closeSessionCallsCount += 1
+        closeSessionClosure?()
+    }
+
+}
+class LogoutPresenterOutputProtocolMock: LogoutPresenterOutputProtocol {
+
+    //MARK: - popInNavigation
+
+    var popInNavigationCallsCount = 0
+    var popInNavigationCalled: Bool {
+        return popInNavigationCallsCount > 0
+    }
+    var popInNavigationClosure: (() -> Void)?
+
+    func popInNavigation() {
+        popInNavigationCallsCount += 1
+        popInNavigationClosure?()
+    }
+
+}
+class LogoutRouterProtocolMock: LogoutRouterProtocol {
+
+    //MARK: - goBackToLogin
+
+    var goBackToLoginCallsCount = 0
+    var goBackToLoginCalled: Bool {
+        return goBackToLoginCallsCount > 0
+    }
+    var goBackToLoginClosure: (() -> Void)?
+
+    func goBackToLogin() {
+        goBackToLoginCallsCount += 1
+        goBackToLoginClosure?()
+    }
+
+}

@@ -9,3 +9,4 @@
 "userName.placeholder" = "User name";
 "password.placeholder" = "Password";
 "continue.title" = "Log In";
+"logout.title"  = "Logout";

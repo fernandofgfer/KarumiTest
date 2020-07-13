@@ -16,6 +16,18 @@
 		0719647624B9BD08002896FC /* AutoMockable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0719647424B9BD08002896FC /* AutoMockable.generated.swift */; };
 		0719647A24B9C0D6002896FC /* LoginPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0719647924B9C0D6002896FC /* LoginPresenterTests.swift */; };
 		0719647C24B9C407002896FC /* LoginInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0719647B24B9C407002896FC /* LoginInteractorTests.swift */; };
+		0719648024BB03A6002896FC /* LogoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0719647F24BB03A6002896FC /* LogoutViewController.swift */; };
+		0719648224BB03B7002896FC /* LogoutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0719648124BB03B7002896FC /* LogoutViewController.xib */; };
+		0719648524BB0495002896FC /* LogoutPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0719648424BB0495002896FC /* LogoutPresenter.swift */; };
+		0719648724BB049F002896FC /* LogoutPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0719648624BB049F002896FC /* LogoutPresenterProtocol.swift */; };
+		0719648924BB0501002896FC /* LogoutPresenterOutputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0719648824BB0501002896FC /* LogoutPresenterOutputProtocol.swift */; };
+		0719648C24BB0550002896FC /* LogoutInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0719648B24BB0550002896FC /* LogoutInteractor.swift */; };
+		0719648E24BB055B002896FC /* LogoutInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0719648D24BB055B002896FC /* LogoutInteractorProtocol.swift */; };
+		0719649124BB060D002896FC /* LogoutRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0719649024BB060D002896FC /* LogoutRouterProtocol.swift */; };
+		0719649324BB0629002896FC /* LogoutRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0719649224BB0629002896FC /* LogoutRouter.swift */; };
+		0719649524BB067E002896FC /* LogoutAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0719649424BB067E002896FC /* LogoutAssembler.swift */; };
+		0719649824BB0909002896FC /* LogoutPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0719649724BB0909002896FC /* LogoutPresenterTests.swift */; };
+		0719649A24BB0A3B002896FC /* LogoutInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0719649924BB0A3B002896FC /* LogoutInteractorTests.swift */; };
 		071D083324B73D8500C2B6F0 /* LoginPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071D083224B73D8500C2B6F0 /* LoginPresenterProtocol.swift */; };
 		071D083A24B7508600C2B6F0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 071D083C24B7508600C2B6F0 /* Localizable.strings */; };
 		071D083E24B752A600C2B6F0 /* LoginInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071D083D24B752A600C2B6F0 /* LoginInteractorProtocol.swift */; };
@@ -58,6 +70,18 @@
 		0719647424B9BD08002896FC /* AutoMockable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoMockable.generated.swift; sourceTree = "<group>"; };
 		0719647924B9C0D6002896FC /* LoginPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenterTests.swift; sourceTree = "<group>"; };
 		0719647B24B9C407002896FC /* LoginInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractorTests.swift; sourceTree = "<group>"; };
+		0719647F24BB03A6002896FC /* LogoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutViewController.swift; sourceTree = "<group>"; };
+		0719648124BB03B7002896FC /* LogoutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogoutViewController.xib; sourceTree = "<group>"; };
+		0719648424BB0495002896FC /* LogoutPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutPresenter.swift; sourceTree = "<group>"; };
+		0719648624BB049F002896FC /* LogoutPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutPresenterProtocol.swift; sourceTree = "<group>"; };
+		0719648824BB0501002896FC /* LogoutPresenterOutputProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutPresenterOutputProtocol.swift; sourceTree = "<group>"; };
+		0719648B24BB0550002896FC /* LogoutInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutInteractor.swift; sourceTree = "<group>"; };
+		0719648D24BB055B002896FC /* LogoutInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutInteractorProtocol.swift; sourceTree = "<group>"; };
+		0719649024BB060D002896FC /* LogoutRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutRouterProtocol.swift; sourceTree = "<group>"; };
+		0719649224BB0629002896FC /* LogoutRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutRouter.swift; sourceTree = "<group>"; };
+		0719649424BB067E002896FC /* LogoutAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutAssembler.swift; sourceTree = "<group>"; };
+		0719649724BB0909002896FC /* LogoutPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutPresenterTests.swift; sourceTree = "<group>"; };
+		0719649924BB0A3B002896FC /* LogoutInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutInteractorTests.swift; sourceTree = "<group>"; };
 		071D083224B73D8500C2B6F0 /* LoginPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenterProtocol.swift; sourceTree = "<group>"; };
 		071D083B24B7508600C2B6F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		071D083D24B752A600C2B6F0 /* LoginInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractorProtocol.swift; sourceTree = "<group>"; };
@@ -137,6 +161,7 @@
 		0719647724B9C0BA002896FC /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				0719649624BB08F8002896FC /* Logout */,
 				0719647824B9C0C2002896FC /* Login */,
 			);
 			path = Modules;
@@ -149,6 +174,64 @@
 				0719647B24B9C407002896FC /* LoginInteractorTests.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		0719647D24BB0389002896FC /* Logout */ = {
+			isa = PBXGroup;
+			children = (
+				0719649424BB067E002896FC /* LogoutAssembler.swift */,
+				0719648F24BB05FB002896FC /* Router */,
+				0719648A24BB0539002896FC /* Interactor */,
+				0719648324BB044A002896FC /* Presenter */,
+				0719647E24BB0395002896FC /* View */,
+			);
+			path = Logout;
+			sourceTree = "<group>";
+		};
+		0719647E24BB0395002896FC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0719647F24BB03A6002896FC /* LogoutViewController.swift */,
+				0719648124BB03B7002896FC /* LogoutViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0719648324BB044A002896FC /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				0719648424BB0495002896FC /* LogoutPresenter.swift */,
+				0719648624BB049F002896FC /* LogoutPresenterProtocol.swift */,
+				0719648824BB0501002896FC /* LogoutPresenterOutputProtocol.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		0719648A24BB0539002896FC /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				0719648B24BB0550002896FC /* LogoutInteractor.swift */,
+				0719648D24BB055B002896FC /* LogoutInteractorProtocol.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		0719648F24BB05FB002896FC /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				0719649024BB060D002896FC /* LogoutRouterProtocol.swift */,
+				0719649224BB0629002896FC /* LogoutRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		0719649624BB08F8002896FC /* Logout */ = {
+			isa = PBXGroup;
+			children = (
+				0719649724BB0909002896FC /* LogoutPresenterTests.swift */,
+				0719649924BB0A3B002896FC /* LogoutInteractorTests.swift */,
+			);
+			path = Logout;
 			sourceTree = "<group>";
 		};
 		071D083424B740CC00C2B6F0 /* Resources */ = {
@@ -165,6 +248,7 @@
 		071D083724B740F800C2B6F0 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				0719647D24BB0389002896FC /* Logout */,
 				07BB382424B5EF7200D1C5E0 /* Login */,
 			);
 			path = Modules;
@@ -392,6 +476,7 @@
 				071D083A24B7508600C2B6F0 /* Localizable.strings in Resources */,
 				07BB382824B5EF9700D1C5E0 /* LoginViewController.xib in Resources */,
 				07BB380E24B4BE9900D1C5E0 /* LaunchScreen.storyboard in Resources */,
+				0719648224BB03B7002896FC /* LogoutViewController.xib in Resources */,
 				07BB380B24B4BE9900D1C5E0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -495,20 +580,29 @@
 			files = (
 				0719646D24B9B697002896FC /* LoginRouterProtocol.swift in Sources */,
 				0719647024B9B7AC002896FC /* NavigableView.swift in Sources */,
+				0719649124BB060D002896FC /* LogoutRouterProtocol.swift in Sources */,
+				0719648C24BB0550002896FC /* LogoutInteractor.swift in Sources */,
 				071D084624B75AE600C2B6F0 /* User.swift in Sources */,
+				0719648924BB0501002896FC /* LogoutPresenterOutputProtocol.swift in Sources */,
 				071D083E24B752A600C2B6F0 /* LoginInteractorProtocol.swift in Sources */,
 				071D083324B73D8500C2B6F0 /* LoginPresenterProtocol.swift in Sources */,
 				07BB382624B5EF8800D1C5E0 /* LoginViewController.swift in Sources */,
 				071D084124B7552300C2B6F0 /* LoginUseCase.swift in Sources */,
+				0719648524BB0495002896FC /* LogoutPresenter.swift in Sources */,
 				07BB382C24B5EFBD00D1C5E0 /* LoginInteractor.swift in Sources */,
 				07BB380224B4BE9200D1C5E0 /* AppDelegate.swift in Sources */,
+				0719649324BB0629002896FC /* LogoutRouter.swift in Sources */,
+				0719649524BB067E002896FC /* LogoutAssembler.swift in Sources */,
 				07BB383224B73CB100D1C5E0 /* LoginViewProtocol.swift in Sources */,
 				07BB380424B4BE9200D1C5E0 /* SceneDelegate.swift in Sources */,
+				0719648724BB049F002896FC /* LogoutPresenterProtocol.swift in Sources */,
 				0719646624B9B1F0002896FC /* LoginApiClientMock.swift in Sources */,
 				07BB382E24B5EFC600D1C5E0 /* LoginRouter.swift in Sources */,
+				0719648E24BB055B002896FC /* LogoutInteractorProtocol.swift in Sources */,
 				07BB383024B5EFCF00D1C5E0 /* LoginAssembler.swift in Sources */,
 				07BB382A24B5EFB500D1C5E0 /* LoginPresenter.swift in Sources */,
 				0719646A24B9B5BD002896FC /* LoginPresenterOutputProtocol.swift in Sources */,
+				0719648024BB03A6002896FC /* LogoutViewController.swift in Sources */,
 				071D084324B75A7B00C2B6F0 /* ApiClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -521,7 +615,9 @@
 				0719647524B9BD08002896FC /* AutoEquatable.generated.swift in Sources */,
 				07BB381924B4BE9900D1C5E0 /* KarumiTestTests.swift in Sources */,
 				0719647C24B9C407002896FC /* LoginInteractorTests.swift in Sources */,
+				0719649824BB0909002896FC /* LogoutPresenterTests.swift in Sources */,
 				0719647624B9BD08002896FC /* AutoMockable.generated.swift in Sources */,
+				0719649A24BB0A3B002896FC /* LogoutInteractorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
