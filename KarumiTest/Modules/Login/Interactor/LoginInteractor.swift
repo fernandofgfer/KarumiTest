@@ -36,7 +36,6 @@ class LoginInteractor: LoginInteractorProtocol {
         presenter?.userReceived(user: user)
     }
     
-    
     private func userReceived(user: User) {
         userStore.saveUser(user)
         presenter?.userReceived(user: user)

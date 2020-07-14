@@ -236,6 +236,14 @@
 			path = Logout;
 			sourceTree = "<group>";
 		};
+		0719649D24BDD65D002896FC /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				0719649B24BC6BEC002896FC /* UserStore.swift */,
+			);
+			path = Stores;
+			sourceTree = "<group>";
+		};
 		071D083424B740CC00C2B6F0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -295,6 +303,7 @@
 		07BB380024B4BE9200D1C5E0 /* KarumiTest */ = {
 			isa = PBXGroup;
 			children = (
+				0719649D24BDD65D002896FC /* Stores */,
 				0719646E24B9B79F002896FC /* Helpers */,
 				0719646B24B9B678002896FC /* Network */,
 				071D084424B75ADE00C2B6F0 /* Model */,
@@ -304,7 +313,6 @@
 				07BB380124B4BE9200D1C5E0 /* AppDelegate.swift */,
 				07BB380324B4BE9200D1C5E0 /* SceneDelegate.swift */,
 				07BB380F24B4BE9900D1C5E0 /* Info.plist */,
-				0719649B24BC6BEC002896FC /* UserStore.swift */,
 			);
 			path = KarumiTest;
 			sourceTree = "<group>";

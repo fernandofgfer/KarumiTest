@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// sourcery: AutoMockable
 protocol UserStoreProtocol {
     func saveUser(_ user: User)
     func removeUser()
