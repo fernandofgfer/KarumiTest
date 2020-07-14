@@ -44,6 +44,19 @@ class LoginInteractorProtocolMock: LoginInteractorProtocol {
         logginUsernamePasswordClosure?(username, password)
     }
 
+    //MARK: - checkIfUserIsStored
+
+    var checkIfUserIsStoredCallsCount = 0
+    var checkIfUserIsStoredCalled: Bool {
+        return checkIfUserIsStoredCallsCount > 0
+    }
+    var checkIfUserIsStoredClosure: (() -> Void)?
+
+    func checkIfUserIsStored() {
+        checkIfUserIsStoredCallsCount += 1
+        checkIfUserIsStoredClosure?()
+    }
+
 }
 class LoginPresenterOutputProtocolMock: LoginPresenterOutputProtocol {
 
@@ -192,6 +205,53 @@ class LogoutRouterProtocolMock: LogoutRouterProtocol {
     func goBackToLogin() {
         goBackToLoginCallsCount += 1
         goBackToLoginClosure?()
+    }
+
+}
+class UserStoreProtocolMock: UserStoreProtocol {
+
+    //MARK: - saveUser
+
+    var saveUserCallsCount = 0
+    var saveUserCalled: Bool {
+        return saveUserCallsCount > 0
+    }
+    var saveUserReceivedUser: User?
+    var saveUserReceivedInvocations: [User] = []
+    var saveUserClosure: ((User) -> Void)?
+
+    func saveUser(_ user: User) {
+        saveUserCallsCount += 1
+        saveUserReceivedUser = user
+        saveUserReceivedInvocations.append(user)
+        saveUserClosure?(user)
+    }
+
+    //MARK: - removeUser
+
+    var removeUserCallsCount = 0
+    var removeUserCalled: Bool {
+        return removeUserCallsCount > 0
+    }
+    var removeUserClosure: (() -> Void)?
+
+    func removeUser() {
+        removeUserCallsCount += 1
+        removeUserClosure?()
+    }
+
+    //MARK: - isUserSaved
+
+    var isUserSavedCallsCount = 0
+    var isUserSavedCalled: Bool {
+        return isUserSavedCallsCount > 0
+    }
+    var isUserSavedReturnValue: User?
+    var isUserSavedClosure: (() -> User?)?
+
+    func isUserSaved() -> User? {
+        isUserSavedCallsCount += 1
+        return isUserSavedClosure.map({ $0() }) ?? isUserSavedReturnValue
     }
 
 }

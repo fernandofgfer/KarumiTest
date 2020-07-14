@@ -11,10 +11,13 @@ import Foundation
 class LoginInteractor: LoginInteractorProtocol {
     
     let loginUseCase: LoginUseCaseProtocol
+    let userStore: UserStoreProtocol
     weak var presenter: LoginPresenterOutputProtocol?
     
-    init(loginUseCase: LoginUseCaseProtocol) {
+    init(loginUseCase: LoginUseCaseProtocol,
+         userStore: UserStoreProtocol) {
         self.loginUseCase = loginUseCase
+        self.userStore = userStore
     }
     
     func loggin(username: String, password: String) {
@@ -28,7 +31,13 @@ class LoginInteractor: LoginInteractorProtocol {
         }
     }
     
+    func checkIfUserIsStored() {
+        guard let user = userStore.isUserSaved() else { return }
+        presenter?.userReceived(user: user)
+    }
+    
     private func userReceived(user: User) {
+        userStore.saveUser(user)
         presenter?.userReceived(user: user)
     }
     

@@ -86,4 +86,12 @@ class LoginPresenterTests: XCTestCase {
         XCTAssertEqual(1, view.showLoginErrorCallsCount)
     }
     
+    func testViewIsReadyShouldCallCheckIfUserIsStored() {
+        // When
+        sut.viewIsReady()
+        
+        // Then
+        XCTAssertEqual(1, interactor.checkIfUserIsStoredCallsCount)
+    }
+    
 }

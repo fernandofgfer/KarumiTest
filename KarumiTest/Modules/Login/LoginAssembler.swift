@@ -15,7 +15,7 @@ protocol LoginAssemblerProtocol {
 class LoginAssembler: LoginAssemblerProtocol {
     
     func resolveLogin() -> LoginViewController {
-        let interactor = LoginInteractor(loginUseCase: getLoginUseCase())
+        let interactor = resolveInteractor()
         let router = LoginRouter()
         let presenter = LoginPresenter(interactor: interactor,
                                        router: router)
@@ -27,7 +27,15 @@ class LoginAssembler: LoginAssemblerProtocol {
         
     }
     
-    func getLoginUseCase() -> LoginUseCaseProtocol {
+    private func resolveInteractor() -> LoginInteractor {
+        return LoginInteractor(loginUseCase: resolveLoginUseCase(), userStore: resolveUserStore())
+    }
+    
+    private func resolveUserStore() -> UserStoreProtocol {
+        return UserStore(userDefaults: UserDefaults.standard)
+    }
+    
+    private func resolveLoginUseCase() -> LoginUseCaseProtocol {
         return LoginUseCase(apiClient: LoginApiClientMock())
     }
 }
