@@ -1,0 +1,14 @@
+language: objective-c
+osx_image: xcode11.5
+
+before_install:
+  - gem install xcpretty
+  - gem install cocoapods
+  - pod repo update
+
+install:
+  - pod install
+
+script:
+  - swiftlint
+  - set -o pipefail && xcodebuild -workspace KarumiTest.xcworkspace -scheme 'KarumiTestTests' -destination 'platform=iOS\ Simulator,OS=13.5,name=iPhone\ 11' build test CODE_SIGN_IDENTITY=- | xcpretty -c
