@@ -21,4 +21,4 @@ jobs:
             -destination platform=iOS\ Simulator,OS=13.5,name=iPhone\ 11
             test | xcpretty
         - name: Codecov
-            - bash <(curl -s https://codecov.io/bash) -t e728ca9d-8b07-4cd1-85c4-cf3f2e7beff1
+            run: bash <(curl -s https://codecov.io/bash) -t e728ca9d-8b07-4cd1-85c4-cf3f2e7beff1
