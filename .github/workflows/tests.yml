@@ -19,8 +19,4 @@ jobs:
           run: xcodebuild -workspace KarumiTest.xcworkspace
             -scheme KarumiTestTests
             -destination platform=iOS\ Simulator,OS=13.5,name=iPhone\ 11
-            test | xcpretty
-        - name: Code coverage
-          uses: codecov/codecov-action@v1
-          with:
-            token: e728ca9d-8b07-4cd1-85c4-cf3f2e7beff1
+            test | xcpretty | bash <(curl -s https://codecov.io/bash) -t e728ca9d-8b07-4cd1-85c4-cf3f2e7beff1
