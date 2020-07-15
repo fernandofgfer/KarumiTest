@@ -10,6 +10,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="KarumiTest" customModuleProvider="target">
             <connections>
                 <outlet property="continueButton" destination="Gcb-RX-JG6" id="8qF-vB-Fkh"/>
+                <outlet property="errorLabel" destination="aUD-wx-rFa" id="NYp-Cx-IQi"/>
                 <outlet property="passwordTextField" destination="9DQ-KD-KiH" id="Oat-TG-c8h"/>
                 <outlet property="userNameTextField" destination="7IK-UR-A6c" id="uKj-ml-5aH"/>
                 <outlet property="view" destination="vRw-fy-QYC" id="mby-Re-Qax"/>
@@ -46,27 +47,40 @@
                                 <constraint firstAttribute="height" constant="40" id="uks-R8-xED"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="done"/>
                         </textField>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9DQ-KD-KiH">
                             <rect key="frame" x="0.0" y="60" width="374" height="40"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="done" textContentType="password"/>
                         </textField>
                     </subviews>
                 </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aUD-wx-rFa">
+                    <rect key="frame" x="30" y="339" width="354" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Lb7-I5-22H"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
+                <constraint firstItem="aUD-wx-rFa" firstAttribute="centerX" secondItem="vRw-fy-QYC" secondAttribute="centerX" id="0yU-H5-gaT"/>
                 <constraint firstItem="m7u-pA-3pp" firstAttribute="top" secondItem="w1C-xo-oaz" secondAttribute="bottom" constant="80" id="3jk-4P-ftl"/>
                 <constraint firstItem="8b6-PE-5jb" firstAttribute="trailing" secondItem="Gcb-RX-JG6" secondAttribute="trailing" constant="40" id="Kkj-Ub-zfQ"/>
                 <constraint firstItem="m7u-pA-3pp" firstAttribute="centerY" secondItem="vRw-fy-QYC" secondAttribute="centerY" id="OdB-OP-J1R"/>
                 <constraint firstItem="m7u-pA-3pp" firstAttribute="centerX" secondItem="vRw-fy-QYC" secondAttribute="centerX" id="TTh-KI-luT"/>
                 <constraint firstItem="Gcb-RX-JG6" firstAttribute="leading" secondItem="8b6-PE-5jb" secondAttribute="leading" constant="40" id="Vwf-Ab-VUc"/>
+                <constraint firstItem="aUD-wx-rFa" firstAttribute="leading" secondItem="8b6-PE-5jb" secondAttribute="leading" constant="30" id="WDd-Tx-zkn"/>
                 <constraint firstItem="8b6-PE-5jb" firstAttribute="trailing" secondItem="m7u-pA-3pp" secondAttribute="trailing" constant="20" id="YYB-2Y-kCm"/>
                 <constraint firstItem="m7u-pA-3pp" firstAttribute="leading" secondItem="8b6-PE-5jb" secondAttribute="leading" constant="20" id="e4R-aD-G6P"/>
                 <constraint firstItem="Gcb-RX-JG6" firstAttribute="top" secondItem="m7u-pA-3pp" secondAttribute="bottom" constant="80" id="h2y-97-PM8"/>
+                <constraint firstItem="m7u-pA-3pp" firstAttribute="top" secondItem="aUD-wx-rFa" secondAttribute="bottom" constant="19" id="hWR-8T-7pk"/>
                 <constraint firstItem="w1C-xo-oaz" firstAttribute="centerX" secondItem="vRw-fy-QYC" secondAttribute="centerX" id="joi-Xv-5nW"/>
+                <constraint firstItem="8b6-PE-5jb" firstAttribute="trailing" secondItem="aUD-wx-rFa" secondAttribute="trailing" constant="30" id="vdX-vi-t5R"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="8b6-PE-5jb"/>
             <point key="canvasLocation" x="138" y="775"/>

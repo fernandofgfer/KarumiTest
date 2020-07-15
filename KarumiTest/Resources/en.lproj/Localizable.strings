@@ -10,3 +10,5 @@
 "password.placeholder" = "Password";
 "continue.title" = "Log In";
 "logout.title"  = "Logout";
+"error.login" = "Credential error";
+"error.unfilled" = "Fill username and password";
