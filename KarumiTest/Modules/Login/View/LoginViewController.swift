@@ -14,6 +14,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var userNameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var continueButton: UIButton!
+    @IBOutlet weak var errorLabel: UILabel!
     
     let presenter: LoginPresenterProtocol
     
@@ -35,15 +36,21 @@ class LoginViewController: UIViewController {
     private func setUpView() {
         setStyle()
         setLocalizable()
+        setDelegates()
     }
     
     private func setStyle() {
+        self.navigationController?.isNavigationBarHidden = true
+        
         continueButton.backgroundColor = .blue
         continueButton.layer.cornerRadius = 5
         continueButton.setTitleColor(.white, for: .normal)
         
         userNameTextField.layer.cornerRadius = 5
         passwordTextField.layer.cornerRadius = 5
+        
+        errorLabel.textColor = .red
+        errorLabel.isHidden = true
     }
     
     private func setLocalizable() {
@@ -52,17 +59,32 @@ class LoginViewController: UIViewController {
         passwordTextField.placeholder = NSLocalizedString("password.placeholder", comment: "")
     }
     
+    private func setDelegates() {
+        userNameTextField.delegate = self
+        passwordTextField.delegate = self
+    }
+    
     @IBAction func continueButtonTapped(sender: UIButton) {
+        errorLabel.isHidden = true
         presenter.logginTapped(username: userNameTextField.text, password: passwordTextField.text)
     }
 }
 
 extension LoginViewController: LoginViewProtocol {
     func showLoginError() {
-        
+        errorLabel.isHidden = false
+        errorLabel.text = NSLocalizedString("error.login", comment: "")
     }
     
     func showUnfilledError() {
-        
+        errorLabel.isHidden = false
+        errorLabel.text = NSLocalizedString("error.unfilled", comment: "")
+    }
+}
+
+extension LoginViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
 }

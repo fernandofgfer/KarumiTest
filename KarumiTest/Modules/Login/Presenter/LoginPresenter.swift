@@ -21,11 +21,14 @@ class LoginPresenter: LoginPresenterProtocol {
     }
     
     func logginTapped(username: String?, password: String?) {
-        guard let userame = username, let password = password else {
+        guard let username = username,
+            !username.isEmpty,
+            let password = password,
+            !password.isEmpty else {
             view?.showUnfilledError()
             return
         }
-        interactor.loggin(username: userame, password: password)
+        interactor.loggin(username: username, password: password)
     }
     
     func viewIsReady() {
