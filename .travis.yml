@@ -11,6 +11,6 @@ install:
 
 script:
   - swiftlint
-  - set -o pipefail && xcodebuild -workspace KarumiTest.xcworkspace -scheme 'KarumiTest' -destination 'platform=iOS Simulator,OS=13.5,name=iPhone 11' build test CODE_SIGN_IDENTITY=- | xcpretty -c
+  - set -o pipefail && xcodebuild -workspace KarumiTest.xcworkspace -scheme 'KarumiTest' -destination 'platform=iOS Simulator,OS=13.5,name=iPhone 11' -enableCodeCoverage YES clean build test
 after_success:
   - bash <(curl -s https://codecov.io/bash)
