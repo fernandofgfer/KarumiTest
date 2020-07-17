@@ -37,3 +37,5 @@ The project has Swiftlint added to control the quality of the code.
 At the beginning, I started the project using github actions, but I had some problems trying to upload the code coverage to Codecov, so I changed to Travis CI.
 
 The tests are executed in each push and each pull request.
+
+I've added also two lanes of fastlane, one to execute the test, and another, that will work if I would add a developer account, to generate the build of the app.
