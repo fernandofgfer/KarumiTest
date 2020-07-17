@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// sourcery: AutoMockable
 protocol LoginPresenterProtocol: AnyObject {
     func logginTapped(username: String?, password: String?)
     func viewIsReady()

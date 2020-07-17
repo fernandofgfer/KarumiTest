@@ -95,6 +95,39 @@ class LoginPresenterOutputProtocolMock: LoginPresenterOutputProtocol {
     }
 
 }
+class LoginPresenterProtocolMock: LoginPresenterProtocol {
+
+    //MARK: - logginTapped
+
+    var logginTappedUsernamePasswordCallsCount = 0
+    var logginTappedUsernamePasswordCalled: Bool {
+        return logginTappedUsernamePasswordCallsCount > 0
+    }
+    var logginTappedUsernamePasswordReceivedArguments: (username: String?, password: String?)?
+    var logginTappedUsernamePasswordReceivedInvocations: [(username: String?, password: String?)] = []
+    var logginTappedUsernamePasswordClosure: ((String?, String?) -> Void)?
+
+    func logginTapped(username: String?, password: String?) {
+        logginTappedUsernamePasswordCallsCount += 1
+        logginTappedUsernamePasswordReceivedArguments = (username: username, password: password)
+        logginTappedUsernamePasswordReceivedInvocations.append((username: username, password: password))
+        logginTappedUsernamePasswordClosure?(username, password)
+    }
+
+    //MARK: - viewIsReady
+
+    var viewIsReadyCallsCount = 0
+    var viewIsReadyCalled: Bool {
+        return viewIsReadyCallsCount > 0
+    }
+    var viewIsReadyClosure: (() -> Void)?
+
+    func viewIsReady() {
+        viewIsReadyCallsCount += 1
+        viewIsReadyClosure?()
+    }
+
+}
 class LoginRouterProtocolMock: LoginRouterProtocol {
 
     //MARK: - pushToLogout
@@ -189,6 +222,22 @@ class LogoutPresenterOutputProtocolMock: LogoutPresenterOutputProtocol {
     func popInNavigation() {
         popInNavigationCallsCount += 1
         popInNavigationClosure?()
+    }
+
+}
+class LogoutPresenterProtocolMock: LogoutPresenterProtocol {
+
+    //MARK: - didTapOnLogout
+
+    var didTapOnLogoutCallsCount = 0
+    var didTapOnLogoutCalled: Bool {
+        return didTapOnLogoutCallsCount > 0
+    }
+    var didTapOnLogoutClosure: (() -> Void)?
+
+    func didTapOnLogout() {
+        didTapOnLogoutCallsCount += 1
+        didTapOnLogoutClosure?()
     }
 
 }
