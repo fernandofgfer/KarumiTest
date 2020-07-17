@@ -1,0 +1,17 @@
+default_platform(:ios)
+
+platform :ios do
+  lane :tests do
+  	run_tests(workspace: "KarumiTest.xcworkspace",
+            devices: ["iPhone 11"],
+            scheme: "KarumiTest")
+	end
+
+  lane :beta do
+      scan(workspace: "KarumiTest.xcworkspace",
+            devices: ["iPhone 11"],
+            scheme: "KarumiTest")
+      gym(workspace: "KarumiTest.xcworkspace",
+            scheme: "KarumiTest")
+  end
+end
